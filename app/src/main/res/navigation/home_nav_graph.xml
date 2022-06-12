@@ -2,11 +2,26 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_home_activity.xml">
-<!--    app:startDestination="@id/navigation_home">-->
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_home"-->
-<!--        android:name="com.jdars.shared_online_business.Fragments.HomeFragment"-->
-<!--        android:label="@string/str_home"-->
-<!--        tools:layout="@layout/fragment_home" />-->
+    android:id="@+id/navigation_home_activity.xml"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.jdars.h20.Fragments.home.DashboardFragment"
+        android:label="@string/text_dashboard"
+        tools:layout="@layout/fragment_dasboard"/>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.jdars.h20.Fragments.home.ProductFragment"
+        android:label="Product Fragment"
+        tools:layout="@layout/fragment_product"/>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.jdars.h20.Fragments.home.OrderFragment"
+        android:label="Order Fragment"
+        tools:layout="@layout/fragment_oder"/>
+    <fragment
+        android:id="@+id/soldProductFragment"
+        android:name="com.jdars.h20.Fragments.home.SoldProductFragment"
+        android:label="Sold Product Fragment"
+        tools:layout="@layout/fragment_sold_poduct"/>
 </navigation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group>
+        <item android:id="@+id/menu_chat"
+            android:icon="@drawable/ic_chat"
+            android:title="Chat"/>
+        <item android:id="@+id/menu_term_and_condition"
+            android:icon="@drawable/ic_term_and_condition"
+            android:title="Term and Condition"/>
+    </group>
+
+</menu>

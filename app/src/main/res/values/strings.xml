@@ -27,6 +27,10 @@
     <string name="text_register">Register</string>
     <string name="text_already_have_an_account">Already have an account? <font color="#000000"><b>Login</b></font></string>
     <string name="str_please_wait">Please Wait</string>
-
-
+    <string name="text_dashboard">Dashboard</string>
+    <string name="text_order">My Orders</string>
+    <string name="text_product">Product</string>
+    <string name="text_sold">Sold</string>
+    <string name="str_news">News &amp; Services</string>
+    <string name="str_products">Products</string>
 </resources>
