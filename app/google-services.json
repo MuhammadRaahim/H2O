@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "825736790042",
+    "project_id": "h2o--andoird",
+    "storage_bucket": "h2o--andoird.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825736790042:android:5b4f4ad94785238c3ed1a3",
+        "android_client_info": {
+          "package_name": "com.jdars.h20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825736790042-vfi61tlgclmc7ueg95o247su9avf5uce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jdars.h20",
+            "certificate_hash": "d78ec86380b049ee73f5fe3e0bb1b465aa720fdf"
+          }
+        },
+        {
+          "client_id": "825736790042-hcujhodq3l7e6bke7vcjteq5d0trvkgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGn0_4iSx7SSb18Lxe_LOYe6ISrGo6jKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825736790042-hcujhodq3l7e6bke7vcjteq5d0trvkgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

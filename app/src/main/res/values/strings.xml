@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">H20</string>
+    <string name="str_enter_valid_name">Enter a valid name</string>
+    <string name="str_enter_valid_email_address">Enter a valid email address</string>
+    <string name="str_enter_valid_phone">Enter a valid phone number</string>
+    <string name="str_enter_valid_username">Please enter a valid username</string>
+    <string name="str_enter_valid_password_policy">Password should be minimum 6 characters long</string>
+    <string name="str_enter_valid_address">Enter a valid address</string>
+    <string name="str_the_h20">THE-H20</string>
+    <string name="text_login">Login</string>
+    <string name="text_dont_have_an_account">Don\'t have an account? <font color="#000000"><b>Register</b></font></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_email">Email</string>
+    <string name="str_password">Password</string>
+    <string name="str_forget_password">Forget Password ?</string>
+    <string name="str_login_fragment">Login Fragment</string>
+    <string name="str_register_fragment">Register Fragment</string>
+    <string name="str_forget_password_">Forget Password</string>
+    <string name="text_forgot_password_description">Enter your email address we\'ll send you an email to reset your password</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_create_account">Create Account</string>
+    <string name="str_first_name">First Name</string>
+    <string name="str_last_name">Last Name</string>
+    <string name="str_confirm_password">Confirm Password</string>
+    <string name="text_terms_and_conditions">I agree to Terms and Conditions</string>
+    <string name="text_register">Register</string>
+    <string name="text_already_have_an_account">Already have an account? <font color="#000000"><b>Login</b></font></string>
+    <string name="str_please_wait">Please Wait</string>
+
+
+</resources>
