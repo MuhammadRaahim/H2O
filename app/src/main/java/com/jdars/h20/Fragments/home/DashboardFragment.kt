@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +20,7 @@ import com.google.firebase.ktx.Firebase
 import com.horizam.skbhub.Adapters.DashBoardProductAdapter
 import com.horizam.skbhub.Adapters.NewsAdapter
 import com.horizam.skbhub.Utils.Constants
+import com.jdars.h20.CallBacks.OnItemClickListener
 import com.jdars.h20.R
 import com.jdars.h20.databinding.ActivityMainBinding
 import com.jdars.h20.databinding.FragmentDasboardBinding
@@ -28,7 +31,7 @@ import com.jdars.shared_online_business.Utils.BaseUtils
 import java.lang.Exception
 
 
-class DashboardFragment : Fragment() {
+class DashboardFragment : Fragment(),OnItemClickListener {
 
     private lateinit var binding: FragmentDasboardBinding
     private lateinit var drawerHandlerCallback: DrawerHandler
@@ -69,6 +72,7 @@ class DashboardFragment : Fragment() {
                 if (product.news != null){
                     newsAdapter.updateList(product.news!!)
                 }
+                getProducts()
             }
         }.addOnFailureListener {
             BaseUtils.hideProgressbar()
@@ -77,7 +81,6 @@ class DashboardFragment : Fragment() {
     }
 
     private fun getProducts() {
-        BaseUtils.showProgressbar(requireContext())
         productList.clear()
         db.collection(Constants.PRODUCT_DATABASE_ROOT).get().addOnSuccessListener { documentSnapshots ->
             for (documentSnapshot in documentSnapshots) {
@@ -93,12 +96,9 @@ class DashboardFragment : Fragment() {
             }
             if (productList.isNotEmpty()){
                 productAdapter.updateList(productList)
-                binding.rvProducts.visibility = View.VISIBLE
-                binding.tvNoProduct.visibility = View.GONE
                 BaseUtils.hideProgressbar()
             }else{
                 binding.rvProducts.visibility = View.GONE
-                binding.tvNoProduct.visibility = View.VISIBLE
                 BaseUtils.hideProgressbar()
             }
 
@@ -139,7 +139,14 @@ class DashboardFragment : Fragment() {
 
     private fun setProductRecyclerView() {
         binding.rvProducts.layoutManager =  GridLayoutManager(requireActivity(),2,  RecyclerView.VERTICAL, false)
-        productAdapter = DashBoardProductAdapter()
+        productAdapter = DashBoardProductAdapter(productList,this)
         binding.rvProducts.adapter = productAdapter
+    }
+
+    override fun <T> onItemClick(item: T) {
+        if (item is Product){
+            val bundle =  bundleOf(Constants.PRODUCT to item)
+            findNavController().navigate(R.id.productDetailsFragment,bundle)
+        }
     }
 }
