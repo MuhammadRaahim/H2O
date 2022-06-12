@@ -33,4 +33,15 @@
     <string name="text_sold">Sold</string>
     <string name="str_news">News &amp; Services</string>
     <string name="str_products">Products</string>
+    <string name="str_product_title">Product Title</string>
+    <string name="str_product_price">Product Price</string>
+    <string name="str_product_description">Product Description</string>
+    <string name="str_product_quantity">Product Quantity</string>
+    <string name="str_save">Save</string>
+    <string name="permission_required">Permission required for app to work properly</string>
+    <string name="str_invalid_field">Invalid field</string>
+    <string name="str_no_product_added_yet">No Product Added Yet</string>
+    <string name="str_stock_quantity">Stock Quantity</string>
+    <string name="str_go_to_cart">Go To Cart</string>
+    <string name="str_add_to_cart">Add To Cart</string>
 </resources>

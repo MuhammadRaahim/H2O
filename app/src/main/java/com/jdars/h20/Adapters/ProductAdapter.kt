@@ -3,22 +3,25 @@ package com.horizam.skbhub.Adapters
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.horizam.skbhub.Utils.Constants
 import com.jdars.h20.CallBacks.OnItemClickListener
 import com.jdars.h20.R
-import com.jdars.h20.databinding.DashboardProductItemBinding
 import com.jdars.h20.databinding.NewsItemBinding
+import com.jdars.h20.databinding.ProductItemBinding
 import com.jdars.h20.models.Product
 
 
-class DashBoardProductAdapter(
+class ProductAdapter(
     private var productList: ArrayList<Product>,
     var onItemClickListener: OnItemClickListener
-): RecyclerView.Adapter<DashBoardProductAdapter.Holder>() {
+): RecyclerView.Adapter<ProductAdapter.Holder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val binding: DashboardProductItemBinding = DashboardProductItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding: ProductItemBinding = ProductItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return Holder(binding)
     }
 
@@ -37,7 +40,7 @@ class DashBoardProductAdapter(
     }
 
     inner class Holder(
-        var binding: DashboardProductItemBinding
+        var binding: ProductItemBinding
     ):RecyclerView.ViewHolder(binding.root){
 
         fun bind(position: Int) {
@@ -50,7 +53,7 @@ class DashBoardProductAdapter(
             binding.ivProductItemPrice.text = "RS: ${product.price}/="
 
             itemView.setOnClickListener {
-                onItemClickListener.onItemClick(product)
+               onItemClickListener.onItemClick(product)
             }
         }
     }

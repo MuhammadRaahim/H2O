@@ -3,14 +3,16 @@ package com.jdars.h20
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.jdars.h20.databinding.ActivityMainBinding
+import com.jdars.shared_online_business.CallBacks.DrawerHandler
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), DrawerHandler, NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var bottomNavView: BottomNavigationView
@@ -50,5 +52,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 //            }
 //        }
         return false
+    }
+
+    override fun openDrawer() {
+        binding.drawerLayout.openDrawer(GravityCompat.START)
     }
 }

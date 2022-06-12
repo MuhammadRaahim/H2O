@@ -24,4 +24,14 @@
         android:name="com.jdars.h20.Fragments.home.SoldProductFragment"
         android:label="Sold Product Fragment"
         tools:layout="@layout/fragment_sold_poduct"/>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.jdars.h20.Fragments.product.AddProductFragment"
+        android:label="Add Product Fragment"
+        tools:layout="@layout/fragment_add_product"/>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.jdars.h20.Fragments.product.ProductDetailsFragment"
+        android:label="Product Details Fragment"
+        tools:layout="@layout/fragment_product_details"/>
 </navigation>
