@@ -86,7 +86,7 @@ class DashboardFragment : Fragment(),OnItemClickListener {
             for (documentSnapshot in documentSnapshots) {
                 val product  = documentSnapshot.toObject(Product::class.java)
                 try {
-                    if (product.user_id == currentFirebaseUser.uid){
+                    if (product.user_id != currentFirebaseUser.uid){
                         productList.add(product)
                     }
                 } catch (ex: Exception) {

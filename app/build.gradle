@@ -72,6 +72,8 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     //country code
     implementation 'com.hbb20:ccp:2.5.4'
+    // places
+    implementation 'com.google.android.libraries.places:places:2.6.0'
 
 
 }

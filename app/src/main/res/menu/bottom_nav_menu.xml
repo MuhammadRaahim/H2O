@@ -20,6 +20,6 @@
     <item
         android:id="@+id/soldProductFragment"
         android:icon="@drawable/ic_sold"
-        android:title="@string/text_sold" />
+        android:title="@string/str_services" />
 
 </menu>

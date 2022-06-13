@@ -12,12 +12,18 @@
         <entry key="..\:/Users/Dell/Desktop/H20/app/src/main/res/layout/fragment_login.xml" value="0.1734375" />
         <entry key="..\:/Users/Dell/Desktop/H20/app/src/main/res/layout/fragment_register.xml" value="0.1734375" />
         <entry key="..\:/Users/Dell/Desktop/H20/app/src/main/res/layout/progressbar_dialog_layout.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/drawable-v24/drawable_profile_image_background.xml" value="0.1" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/drawable-v24/drawable_white_border_background.xml" value="0.1" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/drawable-v24/ic_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/drawable-v24/ic_delete.xml" value="0.1" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/drawable-v24/ic_drawer.xml" value="0.1" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/drawable-v24/ic_term_and_condition.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/activity_add_service.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/activity_cart_list.xml" value="0.1734375" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/activity_check_out.xml" value="0.2765957446808511" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/activity_edit_profile.xml" value="0.15364583333333334" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/activity_profile.xml" value="0.1734375" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/activity_splash.xml" value="0.1734375" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/app_header_layout.xml" value="0.16" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/dashboard_product_item.xml" value="0.1734375" />
@@ -26,6 +32,7 @@
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/fragment_oder.xml" value="0.1734375" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/fragment_product.xml" value="0.1734375" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/fragment_product_details.xml" value="0.15364583333333334" />
+        <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/fragment_sold_poduct.xml" value="0.1734375" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/nav_header_layout.xml" value="0.1" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/news_item.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/Dell/Documents/GitHub/H2O/app/src/main/res/layout/product_item.xml" value="0.17239583333333333" />

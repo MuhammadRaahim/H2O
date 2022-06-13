@@ -2,13 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-    <group>
-        <item android:id="@+id/menu_chat"
-            android:icon="@drawable/ic_chat"
-            android:title="Chat"/>
-        <item android:id="@+id/menu_term_and_condition"
-            android:icon="@drawable/ic_term_and_condition"
-            android:title="Term and Condition"/>
-    </group>
+        <item android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/str_home"/>
 
+        <item android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/str_profile"/>
+
+        <item android:id="@+id/menu_cart"
+            android:icon="@drawable/ic_cart"
+            android:title="@string/str_my_cart"/>
+
+        <item android:id="@+id/menu_call"
+            android:icon="@drawable/ic_phone"
+            android:title="Call US"/>
+
+        <item android:id="@+id/menu_mail"
+            android:icon="@drawable/ic_email"
+            android:title="Mail Us"/>
+
+        <item android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/str_logout"/>
 </menu>

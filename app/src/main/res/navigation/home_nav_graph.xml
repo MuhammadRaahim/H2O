@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_oder"/>
     <fragment
         android:id="@+id/soldProductFragment"
-        android:name="com.jdars.h20.Fragments.home.SoldProductFragment"
+        android:name="com.jdars.h20.Fragments.home.ServicesFragment"
         android:label="Sold Product Fragment"
         tools:layout="@layout/fragment_sold_poduct"/>
     <fragment

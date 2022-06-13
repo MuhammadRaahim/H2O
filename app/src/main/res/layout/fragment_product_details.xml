@@ -88,5 +88,6 @@
         android:id="@+id/button_go_to_cart"
         style="@style/ShopKartButtonStyle"
         android:text="@string/str_go_to_cart"
+        android:visibility="gone"
         android:layout_width="match_parent" />
 </LinearLayout>

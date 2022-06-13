@@ -44,4 +44,33 @@
     <string name="str_stock_quantity">Stock Quantity</string>
     <string name="str_go_to_cart">Go To Cart</string>
     <string name="str_add_to_cart">Add To Cart</string>
+    <string name="str_no_item_added_to_cart">No Item Added To Cart</string>
+    <string name="str_subtotal">Subtotal</string>
+    <string name="str_shipping">Shipping</string>
+    <string name="str_total">Total</string>
+    <string name="str_checkout">Checkout</string>
+    <string name="str_chat">Chat</string>
+    <string name="str_my_cart">My Cart</string>
+    <string name="str_logout">Logout</string>
+    <string name="title_activity_check_out">CheckOutActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="str_services">Services</string>
+    <string name="str_service_name">Service Name</string>
+    <string name="str_service_quantity">Service Quantity</string>
+    <string name="str_service_description">Service Description</string>
+    <string name="str_home">Home</string>
+    <string name="str_profile">Profile</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_signout">SignOut</string>
+    <string name="str_phone">Phone</string>
+    <string name="str_gender">Gender</string>
+    <string name="str_my_orders">My Orders</string>
+    <string name="str_no_order_yet">No Order yet</string>
 </resources>

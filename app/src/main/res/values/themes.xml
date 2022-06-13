@@ -45,6 +45,23 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+
+    <style name="Dialog" parent="Theme.H20">
+        <item name="android:colorAccent" >@color/primary</item>
+        <item name="colorOnPrimary">@color/primary</item>
+        <item name="colorOnSecondary">@color/primary</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="android:colorControlActivated">@color/primary</item>
+    </style>
+
+    <style name="df_dialog_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
     <style name="ShopKartButtonStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -56,4 +73,10 @@
         <item name="android:textSize">@dimen/_18sdp</item>
         <item name="android:letterSpacing">0.1</item>
     </style>
+    <style name="Theme.H20.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.H20.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.H20.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

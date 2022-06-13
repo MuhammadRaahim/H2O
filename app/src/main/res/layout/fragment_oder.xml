@@ -1,15 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_error"
-    tools:context=".Fragments.home.OrderFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/drawable_gradient_splash_background">
+
+        <ImageView
+            android:id="@+id/back_IV"
+            app:tint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/ic_back"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/str_my_orders"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_orders"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/tab_bar"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/tv_no_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/str_no_order_yet"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/_16sdp"
+        android:layout_below="@id/tab_bar"
+        android:fontFamily="@font/quicksand"/>
+</RelativeLayout>
