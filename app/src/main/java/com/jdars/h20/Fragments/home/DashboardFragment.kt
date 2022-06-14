@@ -116,6 +116,11 @@ class DashboardFragment : Fragment(),OnItemClickListener {
         productReference = db.collection(Constants.NEWS_DATABASE_ROOT)
         auth = FirebaseAuth.getInstance()
         currentFirebaseUser = auth.currentUser!!
+
+        binding.swipeRefresh.setOnRefreshListener{
+            getData()
+            binding.swipeRefresh.isRefreshing = false
+        }
     }
 
     private fun setClickListeners() {

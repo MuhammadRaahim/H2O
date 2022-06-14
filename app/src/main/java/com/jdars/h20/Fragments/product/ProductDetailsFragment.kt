@@ -114,7 +114,6 @@ class ProductDetailsFragment : Fragment() {
         db = Firebase.firestore
         cartReference = db.collection(Constants.CART_DATABASE_ROOT)
         firebaseStorage = FirebaseStorage.getInstance()
-        checkProductExist()
         setData()
     }
 
@@ -130,6 +129,8 @@ class ProductDetailsFragment : Fragment() {
             if (product.user_id == currentFirebaseUser.uid){
                 buttonAddToCart.visibility = View.GONE
                 buttonGoToCart.visibility = View.GONE
+            }else{
+                checkProductExist()
             }
         }
     }
